@@ -1,0 +1,15 @@
+runtime: custom
+env: flex
+
+manual_scaling:
+  instances: 1
+
+env_variables:
+  MB_JETTY_PORT: 8080
+  MB_DB_TYPE: postgres
+  MB_DB_DBNAME: metabase
+  MB_DB_PORT: 3306
+  MB_DB_USER: metabase
+  MB_DB_PASS: ${MB_DB_PASS}
+  MB_DB_HOST: 127.0.0.1
+  METABASE_SQL_INSTANCE: metabase-208612:europe-west2:metabase-postgres

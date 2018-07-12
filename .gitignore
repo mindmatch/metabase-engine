@@ -1,0 +1,4 @@
+.env
+app.yml
+metabase-208612-a4ab5b22acc7.json
+cloud_sql_proxy
