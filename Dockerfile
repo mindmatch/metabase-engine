@@ -9,6 +9,6 @@ ADD https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 ./cloud_sql_proxy
 RUN chmod +x ./cloud_sql_proxy
 
 #Download the latest version of Metabase
-ADD http://downloads.metabase.com/v0.29.3/metabase.jar ./metabase.jar
+ADD http://downloads.metabase.com/v0.30.1/metabase.jar ./metabase.jar
 
 CMD nohup ./cloud_sql_proxy -instances=$METABASE_SQL_INSTANCE=tcp:$MB_DB_PORT & java -jar ./metabase.jar
