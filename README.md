@@ -10,7 +10,7 @@ and a issuer `letsencrypt-prod` created
 createing secrets:
 
 ```
-DB_PASSWORD=Secr3tPa5sw0rd && ./k8s/secrets.bash
+source .env && ./k8s/secrets.bash
 ```
 
 ```shell
