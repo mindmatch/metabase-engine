@@ -1,0 +1,10 @@
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: metabase-ingress
+spec:
+  tls:
+  - secretName: metabase-tls
+  backend:
+    serviceName: metabase-svc
+    servicePort: 80
