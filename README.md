@@ -13,6 +13,8 @@ createing secrets:
 source .env && ./k8s/secrets.bash
 ```
 
+deploying changes
+
 ```shell
 ./k8s.bash
 ```
