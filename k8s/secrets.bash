@@ -1,3 +1,4 @@
+#!/bin/bash
 echo -n ${MB_DB_PASS:?} > db_password && \
   echo -n ${MB_DB_USER:?} > db_user && \
   kubectl delete secret metabase-secrets && \
