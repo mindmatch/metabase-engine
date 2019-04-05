@@ -41,9 +41,9 @@ spec:
             containerPort: 3000
             protocol: TCP
         - name: cloudsql-proxy
-          image: gcr.io/cloudsql-docker/gce-proxy:1.11
+          image: gcr.io/cloudsql-docker/gce-proxy:1.12
           command: ["/cloud_sql_proxy",
-                    "-instances=mindmatch-shared-cluster:europe-west2:shared-postgres=tcp:3306",
+                    "-instances=mindmatch-shared-cluster:europe-west3:shared-postgres-eu=tcp:3306",
                     "-credential_file=/secrets/cloudsql/credentials.json"]
           securityContext:
             runAsUser: 2  # non-root user
